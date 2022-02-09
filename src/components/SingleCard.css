@@ -9,8 +9,18 @@
 }
 .card .front {
   position: absolute;
+  transition: all ease-in 0.2s;
   transform: rotateY(90deg);
 }
 .flipped .front {
   transform: rotateY(0deg);
+}
+
+.card .back {
+  transition: all ease-in 0.2s;
+  transition-delay: 0.2s;
+}
+.flipped .back {
+  transform: rotateY(90deg);
+  transition-delay: 0s;
 }
